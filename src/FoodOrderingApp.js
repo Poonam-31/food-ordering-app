@@ -4,7 +4,7 @@ import {Route, Switch} from "react-router-dom";
 
 import Home from './screens/home/Home';
 
-class FoodOrdering extends Component {
+class FoodOrderingApp extends Component {
     constructor() {
         super();
         this.baseUrl = 'http://localhost:8080/api/'
@@ -19,4 +19,4 @@ class FoodOrdering extends Component {
     }
 }
 
-export default FoodOrdering;
+export default FoodOrderingApp;

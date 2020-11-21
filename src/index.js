@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import FoodOrdering from './FoodOrdering';
+import FoodOrderingApp from './FoodOrderingApp';
 import 'typeface-roboto';
 import {BrowserRouter as Router} from "react-router-dom";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <Router>
-        <FoodOrdering />
+        <FoodOrderingApp />
     </Router>,
     document.getElementById('root')
 );
