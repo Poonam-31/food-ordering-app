@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import FoodOrderingApp from './FoodOrderingApp';
+import 'typeface-roboto';
+import {BrowserRouter as Router} from "react-router-dom";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-    <div>
-        Food Ordering App
-    </div>,
+    <Router>
+        <FoodOrderingApp />
+    </Router>,
     document.getElementById('root')
 );
 
