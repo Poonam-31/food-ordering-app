@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 //importing the header component
 import Header from '../../common/header/Header';
+
 import {withStyles, ThemeProvider, createMuiTheme} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -10,6 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faRupeeSign, faFileExcel } from '@fortawesome/free-solid-svg-icons';
 import './Home.css';
+import Typography from '@material-ui/core/Typography';
 
 const styles = theme => ({
       media: {
@@ -26,6 +28,13 @@ const styles = theme => ({
 
 })
 class Home extends Component {
+	
+	constructor() {
+        super();
+        this.state = {
+            restaurants: []
+        }
+    }
 
     constructor() {
         super();
@@ -121,8 +130,11 @@ class Home extends Component {
                 }
                                     
                 </div>
+
         )
     }
+	
+	
 }
 
 export default withStyles(styles) (Home);
