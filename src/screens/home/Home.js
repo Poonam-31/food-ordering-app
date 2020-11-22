@@ -10,8 +10,8 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faRupeeSign, faFileExcel } from '@fortawesome/free-solid-svg-icons';
+
 import './Home.css';
-import Typography from '@material-ui/core/Typography';
 
 const styles = theme => ({
       media: {
@@ -28,13 +28,6 @@ const styles = theme => ({
 
 })
 class Home extends Component {
-	
-	constructor() {
-        super();
-        this.state = {
-            restaurants: []
-        }
-    }
 
     constructor() {
         super();
