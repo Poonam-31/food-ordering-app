@@ -16,6 +16,7 @@ class FoodOrderingApp extends Component {
             <Switch>
                 <Route exact path='/' render={(props) => <Home {...props} baseUrl={this.baseUrl}/>}/>
                 <Route exact path='/profile' render={(props) => <Profile {...props} />}/>
+
             </Switch>
         )
     }
