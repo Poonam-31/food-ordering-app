@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 //importing the header component
 import Header from '../../common/header/Header';
 
-import {withStyles, ThemeProvider, createMuiTheme} from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faRupeeSign, faFileExcel } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faRupeeSign } from '@fortawesome/free-solid-svg-icons';
 
 import './Home.css';
 
@@ -71,6 +71,10 @@ class Home extends Component {
         xhrFilter.setRequestHeader("Cache-Control", "no-cache");
         xhrFilter.send(dataFilter);
     }
+	
+	 restaurantCardClicked = (restaurantId) => {
+        this.props.history.push('/restaurant/' + restaurantId);
+    }
 
     render() {
         const {classes} = this.props;
@@ -81,7 +85,7 @@ class Home extends Component {
 
                 <div className="flex-main-container">
                 {this.state.restaurantList.map(restaurant => (
-                    <Card className="restaurant-card" key={restaurant.id}>
+                    <Card className="restaurant-card" key={restaurant.id} onClick={() => this.restaurantCardClicked(restaurant.id)}>
                         <CardMedia
                             className={classes.media}
                             image={restaurant.photo_URL}
