@@ -1,0 +1,125 @@
+.root {
+    width: '100%',
+  }
+  
+.MuiFormControl-root .dispNone {
+	display: none;
+}
+
+.MuiFormControl-root .dispBlock {
+	display: block;
+}
+
+.red {
+	color: red;
+}
+  .button {
+      margin-top: 1;
+      margin-right: 1;
+  }
+  .actionsContainer {
+    margin-bottom: 2;
+  }
+  .resetContainer {
+    padding: 3,
+  }
+
+  .parent {
+    display: inline;
+  }
+
+  .left{
+    width: 27%;
+    float: left;
+    margin-top: 54px;;
+  }
+
+  .right{
+    width: 70%;
+    float: left;
+  }
+
+  .MuiGridList-root{
+    display: 'flex';
+    flex-wrap: 'wrap';
+    justify-content: 'space-around';
+    overflow: 'hidden';
+  }
+
+  .MuiGridListTile-root{
+    flex-wrap: 'nowrap';
+    transform: 'translateZ(0)';
+  }
+
+  .state{
+    width:100px;
+  }
+  .MuiSelect-select.MuiSelect-select{
+    width: 170px;;
+  }
+  .MuiList-root{
+    height: 130px;
+  }
+  
+  .MuiIconButton-root{
+    color:grey
+  }
+
+  .summaryrow{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .icon-type {
+    margin-top: 5px;
+}
+
+.item-name {
+    text-align: left;
+    min-width: 50%;
+}
+
+.quantity {
+    min-width: 20%;
+}
+
+.amount {
+    width: 247px;
+    display: inline-block;
+}
+
+.payable-bill-amount {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.place-order-button {
+    width: 100%;
+}
+
+/* Responsive code for the samll Screen */
+@media screen and (max-width:600px){
+  .quantity-container{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.total-amount-container{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.total-price{
+  display:flex;
+  align-items: baseline;
+}
+.item-price{
+  display:flex;
+  align-items: baseline;
+  margin-left: auto;
+}
+}

@@ -15,6 +15,7 @@ import Badge from '@material-ui/core/Badge';
 import RemoveIcon from '@material-ui/icons/Remove';
 import Typography from '@material-ui/core/Typography';
 import Grid from "@material-ui/core/Grid";
+import '../font-awesome/css/font-awesome.min.css';
 
 
 class Details extends Component {
@@ -85,14 +86,7 @@ class Details extends Component {
         return -1; 
     }
 
-    /**
-     * This function is called when you add an item to the cart.
-     * @param e - event
-     * @param id - item id
-     * @param type - type (VEG or NON_VEG)
-     * @param name - item name
-     * @param price - price
-     */
+
     addToCartHandler = (e, id, type, name, price) => {
         var totalAmount = this.state.totalAmount;
         var totalItems = this.state.totalItems;
@@ -137,14 +131,6 @@ class Details extends Component {
 
     }
 
-    /**
-     * This function is called when an item is removed from the cart.
-     * @param e - event
-     * @param id - item id
-     * @param type - type (VEG or NON_VEG)
-     * @param name - item name
-     * @param price - price
-     */
     removeFromCartHandler = (e, id, type, name, price) => {
 
         var index = this.getIndex(name, this.state.orderItems.items, "name");
@@ -207,9 +193,7 @@ class Details extends Component {
         this.setState({ itemQuantityIncreased: false })
     }
 
-    /**
-     * This funciton is called when checkout button is clicked.
-     */
+    
     checkoutHandler = () => {
         if (this.state.totalItems === 0) {
             this.setState({cartEmpty: true});
