@@ -10,6 +10,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faRupeeSign } from '@fortawesome/free-solid-svg-icons';
+import '../font-awesome/css/font-awesome.min.css';
 
 import './Home.css';
 
